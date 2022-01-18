@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts =>font-family: 'Poppins', sans-serif; font-family: 'Quicksand', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      /* Universal style */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      a {
+          text-decoration: none;
+      }
+      li {
+          list-style-type: none;
+      }
+      button {
+          border: none;
+          padding: 8px 11px;
+      }
+
+      /* viewport style */
+      .viewport {
+        /* width: 100%; */
+        height: 110vh;
+        background: url(https://preview.colorlib.com/theme/travel/img/blog/xblog-home-banner.jpg.pagespeed.ic.AoKs9lLPRC.webp);
+        background-size: cover;
+        margin-left: -210px;
+        z-index: -3;
+      }
+      .viewport .viewport-bg {
+        padding: 55vh 0;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
+      .viewport .viewport-text {
+        position: relative;
+        margin-top: -70vh;
+        margin-left: 16%;
+        padding: 20px;
+        text-align: center;
+      }
+      .viewport .viewport-text h1 {
+        width: 500px;
+        margin: auto;
+        font-size: 48px;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.2em;
+        color: white;
+      }
+      .viewport .viewport-text p {
+          margin: 20px auto;
+          font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        color: rgb(223, 221, 221);
+      }
+      .viewport .viewport-text .btn {
+          font-size: 14px;
+          font-weight: bold;
+          font-family: "Poppins", sans-serif;
+          padding: 11px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="viewport">
+      <div class="viewport-bg"></div>
+      <div class="viewport-text">
+        <h1>Dude You’re Getting a Telescope</h1>
+        <p>
+          There is a moment in the life of any aspiring astronomer that it is
+          time to buy that first
+        </p>
+        <button class="btn">View More</button>
+      </div>
+    </section>
+  </body>
+</html>
