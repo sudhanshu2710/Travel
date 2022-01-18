@@ -11,288 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="blog.css" />
     <title>Document</title>
-    <style>
-      /* Universal style */
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-      *::selection {
-        background-color: #f8b600;
-        color: #fff;
-      }
-      a {
-        text-decoration: none;
-      }
-      li {
-        list-style-type: none;
-      }
-      button {
-        border: none;
-        padding: 8px 11px;
-        cursor: pointer;
-      }
-
-      /* viewport style */
-      .viewport {
-        height: 110vh;
-        background: url(https://preview.colorlib.com/theme/travel/img/blog/xblog-home-banner.jpg.pagespeed.ic.AoKs9lLPRC.webp);
-        background-size: cover;
-        margin-left: -210px;
-        z-index: -3;
-        overflow: hidden;
-      }
-      .viewport .viewport-bg {
-        padding: 55vh 0;
-        background: rgba(0, 0, 0, 0.5);
-      }
-      .viewport .viewport-text {
-        width: 80%;
-        position: relative;
-        top: -70vh;
-        left: 20vw;
-        padding: 20px;
-        text-align: center;
-      }
-      .viewport .viewport-text h1 {
-        width: 50%;
-        margin: auto;
-        font-size: 48px;
-        line-height: 1.2em;
-        color: white;
-      }
-      .viewport .viewport-text p {
-        width: 80%;
-        margin: 20px auto;
-        font-size: 14px;
-        color: rgb(223, 221, 221);
-      }
-      .viewport .viewport-text .btn {
-        font-size: 14px;
-        font-weight: bold;
-        padding: 11px 30px;
-      }
-      .viewport .viewport-text .btn:hover {
-        color: white;
-        background: transparent;
-        border: 1px solid white;
-        transition: all 0.3s ease;
-      }
-
-      /* section->category below viewport */
-      section[text="category"] {
-        position: relative;
-        padding: 90px 0px;
-      }
-      .category {
-        width: 90%;
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(3, 330px);
-        justify-content: space-around;
-        margin: auto;
-        text-align: center;
-      }
-      .category img {
-        width: 100%;
-      }
-      .category .over-text {
-        width: 85%;
-        margin: auto;
-        padding: 30px 0;
-        position: relative;
-        top: -180px;
-        text-align: center;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.85);
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-      }
-      .category .over-text:hover {
-        background-color: rgb(252, 185, 1, 0.85);
-        transition: all 0.3s ease-in-out;
-      }
-      .category .over-text h3 {
-        width: 80%;
-        font-size: 18px;
-        letter-spacing: 1px;
-        margin: auto;
-        padding-bottom: 20px;
-        border-bottom: 2px solid white;
-      }
-      .category .over-text p {
-        font-size: 14px;
-        margin-top: 10px;
-      }
-
-      /* blog content style */
-      .blog-content {
-        display: grid;
-        grid-template-columns: 760px 350px;
-        justify-content: space-around;
-        margin-bottom: 100px;
-      }
-      .main-content .row {
-        display: grid;
-        grid-template-columns: 190px 570px;
-        margin-bottom: 40px;
-      }
-      .main-content .left-sidebar {
-        padding: 30px 15px 0;
-        text-align: right;
-        line-height: 1.4em;
-      }
-      .left-sidebar-list li {
-        font-size: 14px;
-        margin-bottom: 10px;
-        cursor: pointer;
-      }
-      .left-sidebar-list li:hover {
-        color: rgb(252, 185, 1, 0.85);
-      }
-      .left-sidebar-list li:nth-child(1) {
-        margin-right: 0;
-        margin-bottom: 30px;
-      }
-      .left-sidebar-list li img {
-        width: 14px;
-        height: 14px;
-        margin-left: 5px;
-      }
-      .main-content .content {
-        padding: 0 15px;
-      }
-      .main-content .content img {
-        width: 540px;
-      }
-      .main-content .content h2 {
-        margin: 20px 0;
-        font-size: 24px;
-        color: #222222;
-      }
-      .main-content .content p {
-        font-size: 14px;
-        margin: 0 0 20px;
-      }
-      .main-content .content button {
-        font-size: 14px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding: 10px 30px;
-        color: #222222;
-        background-color: rgb(241, 238, 238);
-      }
-      .main-content .content button:hover {
-        background: #f8b600;
-        color: #fff;
-      }
-      .main-content .aside-content {
-        width: 350px;
-      }
-
-      /* media queries - 750tablet, 500mobile */
-      /* @media screen and (max-width: 1100px) {
-        .viewport {
-          margin-left: -28%;
-        }
-        .viewport .viewport-text {
-          left: 25vw;
-        }
-      }
-      @media screen and (max-width: 1000px) {
-        .viewport {
-          margin-left: -35%;
-        }
-        .viewport .viewport-text {
-          left: 28vw;
-        }
-      }
-      @media screen and (max-width: 900px) {
-        .viewport {
-          margin-left: -38%;
-        }
-        .viewport .viewport-text {
-          left: 35vw;
-        }
-      }
-      @media screen and (max-width: 800px) {
-        .viewport {
-          margin-left: -50%;
-        }
-        .viewport .viewport-text {
-          left: 35vw;
-        }
-      } */
-      @media screen and (min-width: 1125px) {
-        .category {
-          height: 202px;
-        }
-      }
-      @media screen and (max-width: 1125px) {
-        .category {
-          grid-template-columns: repeat(1, 750px);
-          grid-template-rows: repeat(3, 460px);
-          row-gap: 30px;
-        }
-        .category .over-text {
-          width: 85%;
-          top: -420px;
-          margin: auto;
-          padding: 19% 0;
-        }
-      }
-      @media screen and (max-width: 850px) {
-        .category {
-          grid-template-columns: repeat(1, 550px);
-          grid-template-rows: repeat(3, 335px);
-        }
-        .category .over-text {
-          top: -310px;
-        }
-      }
-      @media screen and (max-width: 770px) {
-        .viewport {
-          margin-left: -550px;
-        }
-        .viewport .viewport-text {
-          left: 400px;
-        }
-      }
-      @media screen and (max-width: 620px) {
-        .category {
-          grid-template-columns: repeat(1, 400px);
-          grid-template-rows: repeat(3, 245px);
-        }
-        .category .over-text {
-          top: -220px;
-          padding: 13% 0;
-        }
-      }
-      @media screen and (max-width: 500px) {
-        .viewport {
-          margin-left: -670px;
-        }
-        .viewport .viewport-text {
-          left: 450px;
-        }
-        .viewport .viewport-text p {
-          width: 45%;
-        }
-      }
-      @media screen and (max-width: 450px) {
-        .category {
-          grid-template-columns: repeat(1, 250px);
-          grid-template-rows: repeat(3, 153px);
-        }
-        .category .over-text {
-          top: -130px;
-          padding: 5% 0;
-        }
-      }
-    </style>
   </head>
   <body>
     <!-- !viewport html -->
@@ -352,11 +72,38 @@
         <div class="row">
           <div class="left-sidebar">
             <ul class="left-sidebar-list">
-              <li>Food, Technology, <br> Politics, Lifestyle</li>
-              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
-              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
-              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
-              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0"
+                  alt="user"
+                />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8"
+                  alt="views"
+                />
+              </li>
+              <li>
+                06 Comments
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png"
+                  alt="comments"
+                />
+              </li>
             </ul>
           </div>
           <div class="content">
@@ -377,11 +124,38 @@
         <div class="row">
           <div class="left-sidebar">
             <ul class="left-sidebar-list">
-              <li>Food, Technology, <br> Politics, Lifestyle</li>
-              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
-              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
-              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
-              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0"
+                  alt="user"
+                />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8"
+                  alt="views"
+                />
+              </li>
+              <li>
+                06 Comments
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png"
+                  alt="comments"
+                />
+              </li>
             </ul>
           </div>
           <div class="content">
@@ -402,11 +176,38 @@
         <div class="row">
           <div class="left-sidebar">
             <ul class="left-sidebar-list">
-              <li>Food, Technology, <br> Politics, Lifestyle</li>
-              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
-              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
-              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
-              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0"
+                  alt="user"
+                />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8"
+                  alt="views"
+                />
+              </li>
+              <li>
+                06 Comments
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png"
+                  alt="comments"
+                />
+              </li>
             </ul>
           </div>
           <div class="content">
@@ -427,11 +228,38 @@
         <div class="row">
           <div class="left-sidebar">
             <ul class="left-sidebar-list">
-              <li>Food, Technology, <br> Politics, Lifestyle</li>
-              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
-              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
-              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
-              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0"
+                  alt="user"
+                />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8"
+                  alt="views"
+                />
+              </li>
+              <li>
+                06 Comments
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png"
+                  alt="comments"
+                />
+              </li>
             </ul>
           </div>
           <div class="content">
@@ -452,11 +280,38 @@
         <div class="row">
           <div class="left-sidebar">
             <ul class="left-sidebar-list">
-              <li>Food, Technology, <br> Politics, Lifestyle</li>
-              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
-              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
-              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
-              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0"
+                  alt="user"
+                />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img
+                  src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8"
+                  alt="views"
+                />
+              </li>
+              <li>
+                06 Comments
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png"
+                  alt="comments"
+                />
+              </li>
             </ul>
           </div>
           <div class="content">
@@ -475,7 +330,148 @@
           </div>
         </div>
       </main>
-      <aside class="aside-content"></aside>
+      <aside class="aside-content">
+        <div class="search-bar">
+          <div>
+            <input type="text" placeholder="Search Posts" />
+            <img
+              src="https://cdn-icons.flaticon.com/png/128/2311/premium/2311526.png?token=exp=1642527130~hmac=9feff6d03de976b5d6f3c91dccf6add1"
+              alt="search-icon"
+            />
+          </div>
+        </div>
+        <div class="blogger">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xuser-info.png.pagespeed.ic.1A1JgX1vWU.webp"
+            alt="charlie-barber"
+          />
+          <h3>Charlie Barber</h3>
+          <p>Senior blog writer</p>
+          <ul class="social-media">
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/20/20837.png"
+                alt="facebook"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/220/220799.png"
+                alt="twitter"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/919/919847.png"
+                alt="github"
+              />
+            </li>
+          </ul>
+          <p>
+            Boot camps have its supporters andit sdetractors. Some people do not
+            understand why you should have to spend money on boot camp when you
+            can get. Boot camps have itssuppor ters andits detractors.
+          </p>
+        </div>
+        <div class="popular-posts">
+          <button>Popular Posts</button>
+          <div>
+            <img
+              src="https://www.bing.com/images/blob?bcid=RB0H9O3BbbcDRXdhM0xrwGmmYYmc......A"
+              alt=""
+            />
+            <h4>Space The Final Frontier</h4>
+            <p>02 Hours ago</p>
+          </div>
+          <div>
+            <img
+              src="https://www.bing.com/images/blob?bcid=Sx5eebu9YLcDqxcxoNWLuD9SqbotqVTdP9o"
+              alt=""
+            />
+            <h4>The Amazing Hubble</h4>
+            <p>02 Hours ago</p>
+          </div>
+          <div>
+            <img
+              src="https://www.bing.com/images/blob?bcid=SyHtCD1fqbcDRXdhM0xrwGmmYYmc......M"
+              alt=""
+            />
+            <h4>Astonomy Or Astrology</h4>
+            <p>02 Hours ago</p>
+          </div>
+          <div>
+            <img
+              src="https://www.bing.com/images/blob?bcid=RILHiovR4bcDRXdhM0xrwGmmYYmc.....6Q"
+              alt=""
+            />
+            <h4>Asteroids telescope</h4>
+            <p>02 Hours ago</p>
+          </div>
+        </div>
+        <div class="advertise">
+          <img src="https://via.placeholder.com/290x250" alt="advertisement" />
+        </div>
+        <div class="post-categories">
+          <button>Post Categories</button>
+          <div>
+            <p>Technology</p>
+            <p>37</p>
+          </div>
+          <div>
+            <p>Lifestyle</p>
+            <p>24</p>
+          </div>
+          <div>
+            <p>Fashion</p>
+            <p>59</p>
+          </div>
+          <div>
+            <p>Art</p>
+            <p>29</p>
+          </div>
+          <div>
+            <p>Food</p>
+            <p>15</p>
+          </div>
+          <div>
+            <p>Architecture</p>
+            <p>09</p>
+          </div>
+          <div>
+            <p>Adventure</p>
+            <p>44</p>
+          </div>
+        </div>
+        <div class="newsletter">
+          <button>Newsletter</button>
+          <p>
+            Here, I focus on a range of items and features that we use in life
+            without giving them a second thought.
+          </p>
+          <div>
+            <input type="email" placeholder="Enter email" />
+            <button>Subscribe</button>
+          </div>
+          <p>You can unsubscribe at any time</p>
+        </div>
+        <div class="tag-clouds">
+          <button>Tag Clouds</button>
+          <ul>
+            <li>Technology</li>
+            <li>Fashion</li>
+            <li>Architecture</li>
+            <li>Fashion</li>
+            <li>Food</li>
+            <li>Technology</li>
+            <li>Lifestyle</li>
+            <li>Art</li>
+            <li>Adventure</li>
+            <li>Food</li>
+            <li>Lifestyle</li>
+            <li>Adventure</li>
+          </ul>
+        </div>
+      </aside>
     </section>
   </body>
 </html>
