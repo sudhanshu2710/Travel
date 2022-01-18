@@ -18,6 +18,7 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
       }
       *::selection {
         background-color: #f8b600;
@@ -60,7 +61,6 @@
         width: 50%;
         margin: auto;
         font-size: 48px;
-        font-family: "Poppins", sans-serif;
         line-height: 1.2em;
         color: white;
       }
@@ -68,13 +68,11 @@
         width: 80%;
         margin: 20px auto;
         font-size: 14px;
-        font-family: "Poppins", sans-serif;
         color: rgb(223, 221, 221);
       }
       .viewport .viewport-text .btn {
         font-size: 14px;
         font-weight: bold;
-        font-family: "Poppins", sans-serif;
         padding: 11px 30px;
       }
       .viewport .viewport-text .btn:hover {
@@ -107,7 +105,6 @@
         padding: 30px 0;
         position: relative;
         top: -180px;
-        font-family: "Poppins", sans-serif;
         text-align: center;
         color: white;
         background-color: rgba(0, 0, 0, 0.85);
@@ -129,6 +126,71 @@
       .category .over-text p {
         font-size: 14px;
         margin-top: 10px;
+      }
+
+      /* blog content style */
+      .blog-content {
+        display: grid;
+        grid-template-columns: 760px 350px;
+        justify-content: space-around;
+        margin-bottom: 100px;
+      }
+      .main-content .row {
+        display: grid;
+        grid-template-columns: 190px 570px;
+        margin-bottom: 40px;
+      }
+      .main-content .left-sidebar {
+        padding: 30px 15px 0;
+        text-align: right;
+        line-height: 1.4em;
+      }
+      .left-sidebar-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      .left-sidebar-list li:hover {
+        color: rgb(252, 185, 1, 0.85);
+      }
+      .left-sidebar-list li:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+      .left-sidebar-list li img {
+        width: 14px;
+        height: 14px;
+        margin-left: 5px;
+      }
+      .main-content .content {
+        padding: 0 15px;
+      }
+      .main-content .content img {
+        width: 540px;
+      }
+      .main-content .content h2 {
+        margin: 20px 0;
+        font-size: 24px;
+        color: #222222;
+      }
+      .main-content .content p {
+        font-size: 14px;
+        margin: 0 0 20px;
+      }
+      .main-content .content button {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 10px 30px;
+        color: #222222;
+        background-color: rgb(241, 238, 238);
+      }
+      .main-content .content button:hover {
+        background: #f8b600;
+        color: #fff;
+      }
+      .main-content .aside-content {
+        width: 350px;
       }
 
       /* media queries - 750tablet, 500mobile */
@@ -164,6 +226,11 @@
           left: 35vw;
         }
       } */
+      @media screen and (min-width: 1125px) {
+        .category {
+          height: 202px;
+        }
+      }
       @media screen and (max-width: 1125px) {
         .category {
           grid-template-columns: repeat(1, 750px);
@@ -277,6 +344,138 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- !blog content -->
+    <section class="blog-content">
+      <main class="main-content">
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>Food, Technology, <br> Politics, Lifestyle</li>
+              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
+              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
+              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
+              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img1.jpg.pagespeed.ic.6v6CI5mm0C.webp"
+              alt="girl-riding-horse"
+            />
+            <h2>Astronomy Binoculars A Great Alternative</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>Food, Technology, <br> Politics, Lifestyle</li>
+              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
+              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
+              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
+              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img2.jpg.pagespeed.ic.bhu9J2kZFh.webp"
+              alt="trees"
+            />
+            <h2>The Basics Of Buying A Telescope</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>Food, Technology, <br> Politics, Lifestyle</li>
+              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
+              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
+              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
+              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img3.jpg.pagespeed.ic.FBuhruPy_e.webp"
+              alt="man-holding-girl"
+            />
+            <h2>The Glossary Of Telescopes</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>Food, Technology, <br> Politics, Lifestyle</li>
+              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
+              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
+              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
+              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img4.jpg.pagespeed.ic.C3t0-HALmD.webp"
+              alt="a-beautiful-girl"
+            />
+            <h2>The Night Sky</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>Food, Technology, <br> Politics, Lifestyle</li>
+              <li>Mark wiens <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user"></li>
+              <li>12 Dec, 2017 <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date"></li>
+              <li>1.2M Views <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views"></li>
+              <li>06 Comments <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments"></li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img5.jpg.pagespeed.ic.gfyXRu5NQB.webp"
+              alt="factory"
+            />
+            <h2>Telescopes 101</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+      </main>
+      <aside class="aside-content"></aside>
     </section>
   </body>
 </html>
