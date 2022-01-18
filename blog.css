@@ -182,28 +182,28 @@ section[text="category"] {
 .blog-content .aside-content {
   padding: 20px 0;
   text-align: center;
-  border: 1px solid rgb(219, 216, 216);
+  border: 1px solid rgb(245, 242, 242);
 }
 .aside-content > div {
-  border-bottom: 1px solid rgb(231, 227, 227);
+  border-bottom: 1px solid rgb(245, 243, 243);
 }
 .aside-content .search-bar {
   margin: 30px;
   padding-bottom: 30px;
 }
 .aside-content .search-bar > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #f8b600;
-    border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f8b600;
+  border-radius: 40px;
 }
 .aside-content .search-bar input {
-    background-color: transparent;
-    border: none;
-    outline: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .aside-content .search-bar img {
   width: 18px;
@@ -329,10 +329,38 @@ section[text="category"] {
   margin-top: 15px;
 }
 .aside-content .tag-clouds ul li {
+  font-size: 12px;
   padding: 4px 14px;
-  margin-right: 5px;
+  margin-right: 3px;
   margin-bottom: 10px;
   border: 1px solid rgb(243, 238, 238);
+}
+.aside-content .tag-clouds ul li:hover {
+  color: white;
+  background-color: #f8b600;
+  cursor: pointer;
+}
+
+/* section page style */
+section.page {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+section.page div {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+section.page div:nth-child(3) {
+  color: white;
+  background-color: #f8b600;
+}
+section.page div:hover {
+  color: white;
+  background-color: #f8b600;
+}
+section.page img {
+  width: 10px;
 }
 
 /* media queries - 750tablet, 500mobile */
