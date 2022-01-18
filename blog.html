@@ -32,6 +32,7 @@
       button {
         border: none;
         padding: 8px 11px;
+        cursor: pointer;
       }
 
       /* viewport style */
@@ -76,6 +77,59 @@
         font-family: "Poppins", sans-serif;
         padding: 11px 30px;
       }
+      .viewport .viewport-text .btn:hover {
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        transition: all 0.3s ease;
+      }
+
+      /* section->category below viewport */
+      section[text="category"] {
+        position: relative;
+        padding: 90px 0px;
+      }
+      .category {
+        width: 90%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        justify-content: space-around;
+        margin: auto;
+        text-align: center;
+      }
+      .category img {
+        width: 100%;
+      }
+      .category .over-text {
+        width: 85%;
+        margin: auto;
+        padding: 30px 0;
+        position: relative;
+        top: -180px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.85);
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+      }
+      .category .over-text:hover {
+        background-color: rgb(252, 185, 1, 0.85);
+        transition: all 0.3s ease-in-out;
+      }
+      .category .over-text h3 {
+        width: 80%;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: auto;
+        padding-bottom: 20px;
+        border-bottom: 2px solid white;
+      }
+      .category .over-text p {
+        font-size: 14px;
+        margin-top: 10px;
+      }
 
       /* media queries - 750tablet, 500mobile */
       /* @media screen and (max-width: 1100px) {
@@ -110,12 +164,44 @@
           left: 35vw;
         }
       } */
+      @media screen and (max-width: 1125px) {
+        .category {
+          grid-template-columns: repeat(1, 750px);
+          grid-template-rows: repeat(3, 460px);
+          row-gap: 30px;
+        }
+        .category .over-text {
+          width: 85%;
+          top: -420px;
+          margin: auto;
+          padding: 19% 0;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        .category {
+          grid-template-columns: repeat(1, 550px);
+          grid-template-rows: repeat(3, 335px);
+        }
+        .category .over-text {
+          top: -310px;
+        }
+      }
       @media screen and (max-width: 770px) {
         .viewport {
           margin-left: -550px;
         }
         .viewport .viewport-text {
           left: 400px;
+        }
+      }
+      @media screen and (max-width: 620px) {
+        .category {
+          grid-template-columns: repeat(1, 400px);
+          grid-template-rows: repeat(3, 245px);
+        }
+        .category .over-text {
+          top: -220px;
+          padding: 13% 0;
         }
       }
       @media screen and (max-width: 500px) {
@@ -127,6 +213,16 @@
         }
         .viewport .viewport-text p {
           width: 45%;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .category {
+          grid-template-columns: repeat(1, 250px);
+          grid-template-rows: repeat(3, 153px);
+        }
+        .category .over-text {
+          top: -130px;
+          padding: 5% 0;
         }
       }
     </style>
@@ -143,6 +239,42 @@
             time to buy that first
           </p>
           <button class="btn">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- !category section -->
+    <section text="category">
+      <div class="category">
+        <div class="social-life">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget1.jpg.pagespeed.ic.OB0FusT_XG.webp"
+            alt="social-life"
+          />
+          <div class="over-text">
+            <h3>SOCIAL LIFE</h3>
+            <p>Enjoy your social life together</p>
+          </div>
+        </div>
+        <div class="politics">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget2.jpg.pagespeed.ic.3RCDR_AeaY.webp"
+            alt="politics"
+          />
+          <div class="over-text">
+            <h3>POLITICS</h3>
+            <p>Be a part of politics</p>
+          </div>
+        </div>
+        <div class="food">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget3.jpg.pagespeed.ic.8AuSYKIrOh.webp"
+            alt="food"
+          />
+          <div class="over-text">
+            <h3>FOOD</h3>
+            <p>Let the food be finished</p>
+          </div>
         </div>
       </div>
     </section>
