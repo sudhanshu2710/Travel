@@ -19,40 +19,44 @@
         padding: 0px;
         box-sizing: border-box;
       }
+      *::selection {
+        background-color: #f8b600;
+        color: #fff;
+      }
       a {
-          text-decoration: none;
+        text-decoration: none;
       }
       li {
-          list-style-type: none;
+        list-style-type: none;
       }
       button {
-          border: none;
-          padding: 8px 11px;
+        border: none;
+        padding: 8px 11px;
       }
 
       /* viewport style */
       .viewport {
-        /* width: 100%; */
         height: 110vh;
         background: url(https://preview.colorlib.com/theme/travel/img/blog/xblog-home-banner.jpg.pagespeed.ic.AoKs9lLPRC.webp);
         background-size: cover;
         margin-left: -210px;
         z-index: -3;
+        overflow: hidden;
       }
       .viewport .viewport-bg {
         padding: 55vh 0;
         background: rgba(0, 0, 0, 0.5);
-        overflow: hidden;
       }
       .viewport .viewport-text {
+        width: 80%;
         position: relative;
-        margin-top: -70vh;
-        margin-left: 16%;
+        top: -70vh;
+        left: 20vw;
         padding: 20px;
         text-align: center;
       }
       .viewport .viewport-text h1 {
-        width: 500px;
+        width: 50%;
         margin: auto;
         font-size: 48px;
         font-family: "Poppins", sans-serif;
@@ -60,29 +64,86 @@
         color: white;
       }
       .viewport .viewport-text p {
-          margin: 20px auto;
-          font-size: 14px;
+        width: 80%;
+        margin: 20px auto;
+        font-size: 14px;
         font-family: "Poppins", sans-serif;
         color: rgb(223, 221, 221);
       }
       .viewport .viewport-text .btn {
-          font-size: 14px;
-          font-weight: bold;
-          font-family: "Poppins", sans-serif;
-          padding: 11px 30px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        padding: 11px 30px;
+      }
+
+      /* media queries - 750tablet, 500mobile */
+      /* @media screen and (max-width: 1100px) {
+        .viewport {
+          margin-left: -28%;
+        }
+        .viewport .viewport-text {
+          left: 25vw;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .viewport {
+          margin-left: -35%;
+        }
+        .viewport .viewport-text {
+          left: 28vw;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .viewport {
+          margin-left: -38%;
+        }
+        .viewport .viewport-text {
+          left: 35vw;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .viewport {
+          margin-left: -50%;
+        }
+        .viewport .viewport-text {
+          left: 35vw;
+        }
+      } */
+      @media screen and (max-width: 770px) {
+        .viewport {
+          margin-left: -550px;
+        }
+        .viewport .viewport-text {
+          left: 400px;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .viewport {
+          margin-left: -670px;
+        }
+        .viewport .viewport-text {
+          left: 450px;
+        }
+        .viewport .viewport-text p {
+          width: 45%;
+        }
       }
     </style>
   </head>
   <body>
+    <!-- !viewport html -->
     <section class="viewport">
       <div class="viewport-bg"></div>
       <div class="viewport-text">
-        <h1>Dude You’re Getting a Telescope</h1>
-        <p>
-          There is a moment in the life of any aspiring astronomer that it is
-          time to buy that first
-        </p>
-        <button class="btn">View More</button>
+        <div>
+          <h1>Dude You’re Getting a Telescope</h1>
+          <p>
+            There is a moment in the life of any aspiring astronomer that it is
+            time to buy that first
+          </p>
+          <button class="btn">View More</button>
+        </div>
       </div>
     </section>
   </body>
