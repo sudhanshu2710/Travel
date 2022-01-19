@@ -363,6 +363,85 @@ section.page img {
   width: 10px;
 }
 
+/* footer style */
+footer {
+  background: #04091e;
+  padding: 100px 0 120px;
+  color: #777777;
+  font-size: 14px;
+}
+footer h6 {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+footer > section:nth-child(1) {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 285px);
+  justify-content: space-around;
+}
+footer > section > div {
+  padding: 0 15px;
+}
+footer p {
+  line-height: 1.5em;
+}
+.nav-link ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.nav-link ul li {
+  margin-bottom: 12px;
+}
+.newsletter-footer div {
+  display: flex;
+  height: 42px;
+  margin-top: 16px;
+}
+.newsletter-footer div input {
+  width: 80%;
+  padding: 1px 2px 1px 20px;
+  background-color: transparent;
+  border: 1px solid rgb(65, 63, 63);
+  outline: none;
+}
+.newsletter-footer div div {
+  margin-top: -0px;
+  padding: 6px 12px;
+  background-color: #f8b600;
+  cursor: pointer;
+}
+.newsletter-footer div img {
+  width: 16px;
+}
+.terms {
+  width: 85%;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 40px;
+  border-top: 1px solid #777777;
+}
+.terms mark {
+  color: #f8b600;
+  background-color: transparent;
+}
+.terms img {
+  width: 14px;
+}
+.terms ul {
+  width: 30%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.terms ul img {
+  margin: 0 10px;
+}
+
 /* media queries - 750tablet, 500mobile */
 /* @media screen and (max-width: 1100px) {
     .viewport {
@@ -418,6 +497,9 @@ section.page img {
     font-size: 10px;
     padding: 10px 10px;
   }
+  footer > section:nth-child(1) {
+    grid-template-columns: repeat(4, 240px);
+  }
 }
 @media screen and (min-width: 1125px) {
   .category {
@@ -456,6 +538,19 @@ section.page img {
     width: 20%;
     font-size: 12px;
     padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 990px) {
+  footer > section:nth-child(1) {
+    grid-template-columns: repeat(2, 40%);
+    row-gap: 50px;
+  }
+  .terms {
+    flex-direction: column;
+  }
+  .terms ul {
+    margin-top: 20px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 950px) {
@@ -573,6 +668,17 @@ section.page img {
   }
   .viewport .viewport-text p {
     width: 45%;
+  }
+  footer > section:nth-child(1) {
+    grid-template-columns: 100%;
+    row-gap: 50px;
+  }
+  .terms {
+    flex-direction: column;
+  }
+  .terms ul {
+    margin-top: 20px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 450px) {
