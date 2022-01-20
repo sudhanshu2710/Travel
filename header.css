@@ -20,7 +20,7 @@ header {
 header > nav {
   width: 1140px;
   height: 70px;
-  padding: 0 30px;
+  padding: 0 100px;
   position: relative;
   margin: auto;
   background: rgba(196, 192, 192, 0.33);
@@ -59,19 +59,19 @@ header > nav {
 @media screen and (max-width: 1200px) {
   header > nav {
     width: 920px;
+    padding: 0 30px;
   }
   .navbar-list {
-    width: 60%;
+    width: 65%;
   }
 }
 @media screen and (max-width: 1000px) {
   header {
-    /* display: flex; */
     background-color: lightcoral;
   }
   header > nav {
     width: 720px;
-    padding: 30px;
+    padding: 0 50px;
   }
   .navbar-list {
     display: none;
