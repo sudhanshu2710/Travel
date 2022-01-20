@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- google fonts =>font-family: 'Poppins', sans-serif; font-family: 'Quicksand', sans-serif; -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="blog.css" />
-    <link rel="stylesheet" href="blog1.css" />
+    <link rel="stylesheet" href="header.css">
     <title>Document</title>
-</head>
-
-<body>
-    <!-- !viewport html -->
-
-    <header class="header">
-        <!-- <div style="color: azure" class="header__top">
-        <div>
-          <div>Visit Us</div>
-          <div>Buy Ticket</div>
-        </div>
-        <div>
-          <div><b>f</b></div>
-        </div>
-      </div> -->
-        <nav class="nav">
-            <img src="https://images.vexels.com/media/users/3/172724/raw/dc830a36725fa41c713e65c00c80ad71-travel-island-logo-template-design.jpg" alt="Bankist logo" class="nav__logo" id="logo" designer="golu" data-version-name="3.0" />
-
-            <ul class="nav__links">
-                <li class="nav__item">
-                    <a class="nav__link" href="./home.html">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">About</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="hotel.html">Hotel</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="nav nav2bar hidden">
-            <img src="https://images.vexels.com/media/users/3/172724/raw/dc830a36725fa41c713e65c00c80ad71-travel-island-logo-template-design.jpg" alt="Bankist logo" class="nav__logo" id="logo" designer="golu" data-version-name="3.0" />
-
-            <ul class="nav__links">
-                <li class="nav__item">
-                    <a class="nav__link nav__open" href="#">&#9776;</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="viewport-text">
-            <div>
-                <h1>Dude You’re Getting a Telescope</h1>
-                <p>
-                    There is a moment in the life of any aspiring astronomer that it is time to buy that first
-                </p>
-                <button class="btn">View More</button>
-            </div>
-        </div>
+  </head>
+  <body>
+    <!-- !header trial -->
+    <header header-sticky>
+      <nav>
+        <a href="index.html"><img src="image/website-logo.webp" alt="website-logo" /></a>
+        <ul navbar-list class="navbar-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">PACKAGES</a></li>
+          <li><a href="">HOTELS</a></li>
+          <li><a href="">INSURENCE</a></li>
+          <li><a href="blog.html">BLOG<img src="image/down-arrow.png" alt=""></a></li>
+          <li><a href="">PAGES<img src="image/down-arrow.png" alt=""></a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+        <ul hamburger class="hamburger">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- <section class="viewport">
+    <!-- !viewport html -->
+    <section class="viewport">
       <div class="viewport-bg"></div>
       <div class="viewport-text">
         <div>
@@ -81,420 +51,490 @@
           <button class="btn">View More</button>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- !category section -->
     <section text="category">
-        <div class="category">
-            <div class="social-life">
-                <img src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget1.jpg.pagespeed.ic.OB0FusT_XG.webp" alt="social-life" />
-                <div class="over-text">
-                    <h3>SOCIAL LIFE</h3>
-                    <p>Enjoy your social life together</p>
-                </div>
-            </div>
-            <div class="politics">
-                <img src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget2.jpg.pagespeed.ic.3RCDR_AeaY.webp" alt="politics" />
-                <div class="over-text">
-                    <h3>POLITICS</h3>
-                    <p>Be a part of politics</p>
-                </div>
-            </div>
-            <div class="food">
-                <img src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget3.jpg.pagespeed.ic.8AuSYKIrOh.webp" alt="food" />
-                <div class="over-text">
-                    <h3>FOOD</h3>
-                    <p>Let the food be finished</p>
-                </div>
-            </div>
+      <div class="category">
+        <div class="social-life">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget1.jpg.pagespeed.ic.OB0FusT_XG.webp"
+            alt="social-life"
+          />
+          <div class="over-text">
+            <h3>SOCIAL LIFE</h3>
+            <p>Enjoy your social life together</p>
+          </div>
         </div>
+        <div class="politics">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget2.jpg.pagespeed.ic.3RCDR_AeaY.webp"
+            alt="politics"
+          />
+          <div class="over-text">
+            <h3>POLITICS</h3>
+            <p>Be a part of politics</p>
+          </div>
+        </div>
+        <div class="food">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xcat-widget3.jpg.pagespeed.ic.8AuSYKIrOh.webp"
+            alt="food"
+          />
+          <div class="over-text">
+            <h3>FOOD</h3>
+            <p>Let the food be finished</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- !blog content -->
     <section class="blog-content">
-        <main class="main-content">
-            <div class="row">
-                <div class="left-sidebar">
-                    <ul class="left-sidebar-list">
-                        <li>
-                            Food, Technology, <br /> Politics, Lifestyle
-                        </li>
-                        <li>
-                            Mark wiens
-                            <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user" />
-                        </li>
-                        <li>
-                            12 Dec, 2017
-                            <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date" />
-                        </li>
-                        <li>
-                            1.2M Views
-                            <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views" />
-                        </li>
-                        <li>
-                            06 Comments
-                            <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments" />
-                        </li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <img src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img1.jpg.pagespeed.ic.6v6CI5mm0C.webp" alt="girl-riding-horse" />
-                    <h2>Astronomy Binoculars A Great Alternative</h2>
-                    <p>
-                        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-                    </p>
-                    <button href="#">View More</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-sidebar">
-                    <ul class="left-sidebar-list">
-                        <li>
-                            Food, Technology, <br /> Politics, Lifestyle
-                        </li>
-                        <li>
-                            Mark wiens
-                            <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user" />
-                        </li>
-                        <li>
-                            12 Dec, 2017
-                            <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date" />
-                        </li>
-                        <li>
-                            1.2M Views
-                            <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views" />
-                        </li>
-                        <li>
-                            06 Comments
-                            <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments" />
-                        </li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <img src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img2.jpg.pagespeed.ic.bhu9J2kZFh.webp" alt="trees" />
-                    <h2>The Basics Of Buying A Telescope</h2>
-                    <p>
-                        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-                    </p>
-                    <button href="#">View More</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-sidebar">
-                    <ul class="left-sidebar-list">
-                        <li>
-                            Food, Technology, <br /> Politics, Lifestyle
-                        </li>
-                        <li>
-                            Mark wiens
-                            <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user" />
-                        </li>
-                        <li>
-                            12 Dec, 2017
-                            <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date" />
-                        </li>
-                        <li>
-                            1.2M Views
-                            <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views" />
-                        </li>
-                        <li>
-                            06 Comments
-                            <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments" />
-                        </li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <img src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img3.jpg.pagespeed.ic.FBuhruPy_e.webp" alt="man-holding-girl" />
-                    <h2>The Glossary Of Telescopes</h2>
-                    <p>
-                        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-                    </p>
-                    <button href="#">View More</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-sidebar">
-                    <ul class="left-sidebar-list">
-                        <li>
-                            Food, Technology, <br /> Politics, Lifestyle
-                        </li>
-                        <li>
-                            Mark wiens
-                            <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user" />
-                        </li>
-                        <li>
-                            12 Dec, 2017
-                            <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date" />
-                        </li>
-                        <li>
-                            1.2M Views
-                            <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views" />
-                        </li>
-                        <li>
-                            06 Comments
-                            <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments" />
-                        </li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <img src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img4.jpg.pagespeed.ic.C3t0-HALmD.webp" alt="a-beautiful-girl" />
-                    <h2>The Night Sky</h2>
-                    <p>
-                        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-                    </p>
-                    <button href="#">View More</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-sidebar">
-                    <ul class="left-sidebar-list">
-                        <li>
-                            Food, Technology, <br /> Politics, Lifestyle
-                        </li>
-                        <li>
-                            Mark wiens
-                            <img src="https://cdn-icons.flaticon.com/png/128/1358/premium/1358034.png?token=exp=1642510402~hmac=9e2a61ae27478c7044e6f8f62895a4e0" alt="user" />
-                        </li>
-                        <li>
-                            12 Dec, 2017
-                            <img src="https://cdn-icons-png.flaticon.com/128/747/747310.png" alt="date" />
-                        </li>
-                        <li>
-                            1.2M Views
-                            <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989627.png?token=exp=1642510704~hmac=8138a3c745192e94b806787b6e3a21f8" alt="views" />
-                        </li>
-                        <li>
-                            06 Comments
-                            <img src="https://cdn-icons-png.flaticon.com/128/2462/2462719.png" alt="comments" />
-                        </li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <img src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img5.jpg.pagespeed.ic.gfyXRu5NQB.webp" alt="factory" />
-                    <h2>Telescopes 101</h2>
-                    <p>
-                        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
-                    </p>
-                    <button href="#">View More</button>
-                </div>
-            </div>
-        </main>
-        <aside class="aside-content">
-            <div class="search-bar">
-                <div>
-                    <input type="text" placeholder="Search Posts" />
-                    <img src="https://cdn-icons.flaticon.com/png/128/2311/premium/2311526.png?token=exp=1642527130~hmac=9feff6d03de976b5d6f3c91dccf6add1" alt="search-icon" />
-                </div>
-            </div>
-            <div class="blogger">
-                <img src="https://preview.colorlib.com/theme/travel/img/blog/xuser-info.png.pagespeed.ic.1A1JgX1vWU.webp" alt="charlie-barber" />
-                <h3>Charlie Barber</h3>
-                <p>Senior blog writer</p>
-                <ul class="social-media">
-                    <li>
-                        <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="facebook" />
-                    </li>
-                    <li>
-                        <img src="https://cdn-icons-png.flaticon.com/128/220/220799.png" alt="twitter" />
-                    </li>
-                    <li>
-                        <img src="https://cdn-icons-png.flaticon.com/128/919/919847.png" alt="github" />
-                    </li>
-                </ul>
-                <p>
-                    Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.
-                </p>
-            </div>
-            <div class="popular-posts">
-                <button>Popular Posts</button>
-                <div>
-                    <img src="https://www.bing.com/images/blob?bcid=RB0H9O3BbbcDRXdhM0xrwGmmYYmc......A" alt="" />
-                    <h4>Space The Final Frontier</h4>
-                    <p>02 Hours ago</p>
-                </div>
-                <div>
-                    <img src="https://www.bing.com/images/blob?bcid=Sx5eebu9YLcDqxcxoNWLuD9SqbotqVTdP9o" alt="" />
-                    <h4>The Amazing Hubble</h4>
-                    <p>02 Hours ago</p>
-                </div>
-                <div>
-                    <img src="https://www.bing.com/images/blob?bcid=SyHtCD1fqbcDRXdhM0xrwGmmYYmc......M" alt="" />
-                    <h4>Astonomy Or Astrology</h4>
-                    <p>02 Hours ago</p>
-                </div>
-                <div>
-                    <img src="https://www.bing.com/images/blob?bcid=RILHiovR4bcDRXdhM0xrwGmmYYmc.....6Q" alt="" />
-                    <h4>Asteroids telescope</h4>
-                    <p>02 Hours ago</p>
-                </div>
-            </div>
-            <div class="advertise">
-                <img src="https://via.placeholder.com/290x250" alt="advertisement" />
-            </div>
-            <div class="post-categories">
-                <button>Post Categories</button>
-                <div>
-                    <p>Technology</p>
-                    <p>37</p>
-                </div>
-                <div>
-                    <p>Lifestyle</p>
-                    <p>24</p>
-                </div>
-                <div>
-                    <p>Fashion</p>
-                    <p>59</p>
-                </div>
-                <div>
-                    <p>Art</p>
-                    <p>29</p>
-                </div>
-                <div>
-                    <p>Food</p>
-                    <p>15</p>
-                </div>
-                <div>
-                    <p>Architecture</p>
-                    <p>09</p>
-                </div>
-                <div>
-                    <p>Adventure</p>
-                    <p>44</p>
-                </div>
-            </div>
-            <div class="newsletter">
-                <button>Newsletter</button>
-                <p>
-                    Here, I focus on a range of items and features that we use in life without giving them a second thought.
-                </p>
-                <div>
-                    <input type="email" placeholder="Enter email" />
-                    <button>Subscribe</button>
-                </div>
-                <p>You can unsubscribe at any time</p>
-            </div>
-            <div class="tag-clouds">
-                <button>Tag Clouds</button>
-                <ul>
-                    <li>Technology</li>
-                    <li>Fashion</li>
-                    <li>Architecture</li>
-                    <li>Fashion</li>
-                    <li>Food</li>
-                    <li>Technology</li>
-                    <li>Lifestyle</li>
-                    <li>Art</li>
-                    <li>Adventure</li>
-                    <li>Food</li>
-                    <li>Lifestyle</li>
-                    <li>Adventure</li>
-                </ul>
-            </div>
-        </aside>
+      <main class="main-content">
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img src="image/user-icon.png" alt="user" />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img src="image/calender.png" alt="date" />
+              </li>
+              <li>
+                1.2M Views
+                <img src="image/view.png" alt="views" />
+              </li>
+              <li>
+                06 Comments
+                <img src="image/comments.png" alt="comments" />
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img1.jpg.pagespeed.ic.6v6CI5mm0C.webp"
+              alt="girl-riding-horse"
+            />
+            <h2>Astronomy Binoculars A Great Alternative</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img src="image/user-icon.png" alt="user" />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img src="image/calender.png" alt="date" />
+              </li>
+              <li>
+                1.2M Views
+                <img src="image/view.png" alt="views" />
+              </li>
+              <li>
+                06 Comments
+                <img src="image/comments.png" alt="comments" />
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img2.jpg.pagespeed.ic.bhu9J2kZFh.webp"
+              alt="trees"
+            />
+            <h2>The Basics Of Buying A Telescope</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img src="image/user-icon.png" alt="user" />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img src="image/calender.png" alt="date" />
+              </li>
+              <li>
+                1.2M Views
+                <img src="image/view.png" alt="views" />
+              </li>
+              <li>
+                06 Comments
+                <img src="image/comments.png" alt="comments" />
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img3.jpg.pagespeed.ic.FBuhruPy_e.webp"
+              alt="man-holding-girl"
+            />
+            <h2>The Glossary Of Telescopes</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img src="image/user-icon.png" alt="user" />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img src="image/view.png" alt="views" />
+              </li>
+              <li>
+                06 Comments
+                <img src="image/comments.png" alt="comments" />
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img4.jpg.pagespeed.ic.C3t0-HALmD.webp"
+              alt="a-beautiful-girl"
+            />
+            <h2>The Night Sky</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left-sidebar">
+            <ul class="left-sidebar-list">
+              <li>
+                Food, Technology, <br />
+                Politics, Lifestyle
+              </li>
+              <li>
+                Mark wiens
+                <img src="image/user-icon.png" alt="user" />
+              </li>
+              <li>
+                12 Dec, 2017
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/747/747310.png"
+                  alt="date"
+                />
+              </li>
+              <li>
+                1.2M Views
+                <img src="image/view.png" alt="views" />
+              </li>
+              <li>
+                06 Comments
+                <img src="image/comments.png" alt="comments" />
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <img
+              src="https://preview.colorlib.com/theme/travel/img/blog/xfeature-img5.jpg.pagespeed.ic.gfyXRu5NQB.webp"
+              alt="factory"
+            />
+            <h2>Telescopes 101</h2>
+            <p>
+              MCSE boot camps have its supporters and its detractors. Some
+              people do not understand why you should have to spend money on
+              boot camp when you can get the MCSE study materials yourself at a
+              fraction.
+            </p>
+            <button href="#">View More</button>
+          </div>
+        </div>
+      </main>
+      <aside class="aside-content">
+        <div class="search-bar">
+          <div>
+            <input type="text" placeholder="Search Posts" />
+            <img src="image/search-icon.png" alt="search-icon" />
+          </div>
+        </div>
+        <div class="blogger">
+          <img
+            src="https://preview.colorlib.com/theme/travel/img/blog/xuser-info.png.pagespeed.ic.1A1JgX1vWU.webp"
+            alt="charlie-barber"
+          />
+          <h3>Charlie Barber</h3>
+          <p>Senior blog writer</p>
+          <ul class="social-media">
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/20/20837.png"
+                alt="facebook"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/220/220799.png"
+                alt="twitter"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/919/919847.png"
+                alt="github"
+              />
+            </li>
+          </ul>
+          <p>
+            Boot camps have its supporters andit sdetractors. Some people do not
+            understand why you should have to spend money on boot camp when you
+            can get. Boot camps have itssuppor ters andits detractors.
+          </p>
+        </div>
+        <div class="popular-posts">
+          <button>Popular Posts</button>
+          <div>
+            <img src="image/popular-post-1.jfif" alt="" />
+            <h4>Space The Final Frontier</h4>
+            <p>02 Hours ago</p>
+          </div>
+          <div>
+            <img src="image/popular-post-2.jfif" alt="" />
+            <h4>The Amazing Hubble</h4>
+            <p>02 Hours ago</p>
+          </div>
+          <div>
+            <img src="image/popular-post-3.jfif" alt="" />
+            <h4>Astonomy Or Astrology</h4>
+            <p>02 Hours ago</p>
+          </div>
+          <div>
+            <img src="image/popular-post-4.jfif" alt="" />
+            <h4>Asteroids telescope</h4>
+            <p>02 Hours ago</p>
+          </div>
+        </div>
+        <div class="advertise">
+          <img src="https://via.placeholder.com/290x250" alt="advertisement" />
+        </div>
+        <div class="post-categories">
+          <button>Post Categories</button>
+          <div>
+            <p>Technology</p>
+            <p>37</p>
+          </div>
+          <div>
+            <p>Lifestyle</p>
+            <p>24</p>
+          </div>
+          <div>
+            <p>Fashion</p>
+            <p>59</p>
+          </div>
+          <div>
+            <p>Art</p>
+            <p>29</p>
+          </div>
+          <div>
+            <p>Food</p>
+            <p>15</p>
+          </div>
+          <div>
+            <p>Architecture</p>
+            <p>09</p>
+          </div>
+          <div>
+            <p>Adventure</p>
+            <p>44</p>
+          </div>
+        </div>
+        <div class="newsletter">
+          <button>Newsletter</button>
+          <p>
+            Here, I focus on a range of items and features that we use in life
+            without giving them a second thought.
+          </p>
+          <div>
+            <input type="email" placeholder="Enter email" />
+            <button>Subscribe</button>
+          </div>
+          <p>You can unsubscribe at any time</p>
+        </div>
+        <div class="tag-clouds">
+          <button>Tag Clouds</button>
+          <ul>
+            <li>Technology</li>
+            <li>Fashion</li>
+            <li>Architecture</li>
+            <li>Fashion</li>
+            <li>Food</li>
+            <li>Technology</li>
+            <li>Lifestyle</li>
+            <li>Art</li>
+            <li>Adventure</li>
+            <li>Food</li>
+            <li>Lifestyle</li>
+            <li>Adventure</li>
+          </ul>
+        </div>
+      </aside>
 
-        <!-- !for changing page -->
-        <section class="page">
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/128/860/860790.png" alt="left-arrow" />
-            </div>
-            <div>01</div>
-            <div>02</div>
-            <div>03</div>
-            <div>04</div>
-            <div>09</div>
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="right-arrow" />
-            </div>
-        </section>
+      <!-- !for changing page -->
+      <section class="page">
+        <div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/860/860790.png"
+            alt="left-arrow"
+          />
+        </div>
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>09</div>
+        <div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/709/709586.png"
+            alt="right-arrow"
+          />
+        </div>
+      </section>
     </section>
 
     <!-- !footer -->
     <footer>
-        <section>
-            <div class="agency">
-                <h6>ABOUT AGENCY</h6>
-                <p>
-                    The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point
-                </p>
-            </div>
-            <div class="nav-link">
-                <h6>NAVIGATION LINKS</h6>
-                <ul>
-                    <li>Home</li>
-                    <li>Team</li>
-                    <li>Feature</li>
-                    <li>Pricing</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="newsletter-footer">
-                <h6>Newsletter</h6>
-                <p>
-                    For business professionals caught between high OEM price and mediocre print and graphic output.
-                </p>
-                <div>
-                    <input type="email" placeholder="Email Address" />
-                    <div>
-                        <img src="https://cdn-icons-png.flaticon.com/128/6548/6548507.png" alt="" />
-                    </div>
-                </div>
-            </div>
-            <div class="instafeed">
-                <h6>INSTAFEED</h6>
-                <div>
-                    <img src="https://www.bing.com/images/blob?bcid=S2nNDlN1WLcDqxcxoNWLuD9SqbotqVTdP3I" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=S2JJGT9IPbcDRXdhM0xrwGmmYYmc.....-k" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=SzTkVl-07rcDRXdhM0xrwGmmYYmc.....4Y" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=S9gE2WUrS7cDRXdhM0xrwGmmYYmc.....zA" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=S2RrV-Bp27cDRXdhM0xrwGmmYYmc.....4c" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=S8J-bA3u67cDRXdhM0xrwGmmYYmc.....4c" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=S4nSr3Lbz7cDqxcxoNWLuD9SqbotqVTdP2c" alt="" />
-                    <img src="https://www.bing.com/images/blob?bcid=S0f94WcCorcDRXdhM0xrwGmmYYmc.....ws" alt="" />
-                </div>
-            </div>
-        </section>
-        <section class="terms">
-            <p>
-                Copyright ©2022 All rights reserved | This template is made with
-                <img src="https://cdn-icons-png.flaticon.com/128/1216/1216649.png" alt="love-icon" /> by <mark>Colorlib</mark>
-            </p>
-            <ul class="social-media">
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/128/919/919847.png" alt="github" />
-                </li>
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/128/220/220799.png" alt="twitter" />
-                </li>
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="facebook" />
-                </li>
-            </ul>
-        </section>
-    </footer>
-    <div class="nav2 nav__overlay hidden">
-        <div class="nav__links" style="display: grid">
-            <div class="nav__item">
-                <a class="nav__link" href="home.html">Home</a>
-            </div>
-            <div class="nav__item">
-                <a class="nav__link" href="#section--2">About</a>
-            </div>
-            <div class="nav__item">
-                <a class="nav__link" href="./hotel.html">Hotel</a>
-            </div>
-            <div class="nav__item">
-                <a class="nav__link" href="blog.html">Blog</a>
-            </div>
-            <div class="nav__item">
-                <a class="nav__link" href="#section--3">Contact</a>
-            </div>
+      <section>
+        <div class="agency">
+          <h6>ABOUT AGENCY</h6>
+          <p>
+            The world has become so fast paced that people don’t want to stand
+            by reading a page of information, they would much rather look at a
+            presentation and understand the message. It has come to a point
+          </p>
         </div>
-    </div>
-    <div class="overlay hidden"></div>
-    <script src="./blog1.js"></script>
-</body>
+        <div class="nav-link">
+          <h6>NAVIGATION LINKS</h6>
+          <ul>
+            <li>Home</li>
+            <li>Team</li>
+            <li>Feature</li>
+            <li>Pricing</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="newsletter-footer">
+          <h6>Newsletter</h6>
+          <p>
+            For business professionals caught between high OEM price and
+            mediocre print and graphic output.
+          </p>
+          <div>
+            <input type="email" placeholder="Email Address" />
+            <div>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/6548/6548507.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="instafeed">
+          <h6>INSTAFEED</h6>
+          <div>
+            <img src="image/instafeed-1.webp" alt="" />
+            <img src="image/instafeed-2.webp" alt="" />
+            <img src="image/instafeed-3.webp" alt="" />
+            <img src="image/instafeed-4.webp" alt="" />
+            <img src="image/instafeed-5.webp" alt="" />
+            <img src="image/instafeed-6.webp" alt="" />
+            <img src="image/instafeed-7.webp" alt="" />
+            <img src="image/instafeed-8.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="terms">
+        <p>
+          Copyright ©2022 All rights reserved | This template is made with
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1216/1216649.png"
+            alt="love-icon"
+          />
+          by <mark>Colorlib</mark>
+        </p>
+        <ul class="social-media">
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/919/919847.png"
+              alt="github"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/220/220799.png"
+              alt="twitter"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/20/20837.png"
+              alt="facebook"
+            />
+          </li>
+        </ul>
+      </section>
+    </footer>
 
+    <script src="header.js"></script>
+  </body>
 </html>
