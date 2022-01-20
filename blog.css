@@ -29,6 +29,7 @@ button {
   margin-left: -210px;
   z-index: -3;
   overflow: hidden;
+  position: relative;
 }
 .viewport .viewport-bg {
   padding: 55vh 0;
@@ -36,8 +37,8 @@ button {
 }
 .viewport .viewport-text {
   width: 80%;
-  position: relative;
-  top: -70vh;
+  position: absolute;
+  top: 40vh;
   left: 20vw;
   padding: 20px;
   text-align: center;
@@ -69,12 +70,10 @@ button {
 
 /* section->category below viewport */
 section[text="category"] {
-  position: relative;
   padding: 90px 0px;
 }
 .category {
   width: 90%;
-  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 330px);
   justify-content: space-around;
@@ -83,6 +82,9 @@ section[text="category"] {
 }
 .category img {
   width: 100%;
+}
+.category > div {
+  z-index: -10;
 }
 .category .over-text {
   width: 85%;
