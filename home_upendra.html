@@ -39,21 +39,68 @@
                 </div>
                 <div class="rightCont">
                     <!-- travel form -->
+
                     <div class="form-div">
+                        <div id="switchFormDiv">
+                            <div id="flight_btn" class="switchForm">
+                                <div class="flight_over_text">
+                                    <a href="#"> FLIGHTS</a>
+                                </div>
+                            </div>
+                            <div id="hotel_btn" class="switchForm">
+                                <div class="hotel_over_text">
+                                    <a href="#"> HOTELS</a>
+                                </div>
+                            </div>
+                            <div id="holidays_btn" class="switchForm">
+                                <div class="holidays_over_text ">
+                                    <a href="# "> HOLIDAYS</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <form>
-                            <input type="text" class="form-control" id="from" placeholder="From"> <br>
+                            <input type="text " id="from " placeholder="From " onfocus="rmPlaceholder(this) " onblur="addPlaceholder(this) "> <br>
 
-                            <input type="text" class="form-control" id="to" placeholder="To" onfocus="(this.placeholder='')" onblur="(this.placeholder='To')"> <br>
+                            <input type="text " id="to " placeholder="To " onfocus="rmPlaceholder(this) " onblur="addPlaceholder(this) "> <br>
 
-                            <input type="text" class="form-control" id="startDate" placeholder="Start" onfocus="(this.type='date')" onblur="(this.type='text')"> <br>
+                            <input type="text " id="startDate " placeholder="Start " onfocus="rmPlaceholderDate(this) " onblur="addPlaceholderDate(this) "> <br>
 
-                            <input type="text" class="form-control" id="retuenDate" placeholder="Return" onfocus="(this.type='date')" onblur="(this.type='text')"> <br>
+                            <input type="text " id="retuenDate " placeholder="Return " onfocus="rmPlaceholderDate(this) " onblur="addPlaceholderDate(this) "> <br>
 
-                            <input type="number" class="form-control" id="mobile" placeholder="Adults"> <br>
+                            <input type="number " id="adult " placeholder="Adults " onfocus="rmPlaceholder(this) " onblur="addPlaceholder(this) "> <br>
 
-                            <input type="number" class="form-control" id="mobile" placeholder="Childs"> <br>
-                            <input type="submit" name="submit" id="submit" value="Search Flights">
+                            <input type="number " id="child " placeholder="Childs " onfocus=" rmPlaceholder(this) " onblur="addPlaceholder(this) "> <br>
+                            <input type="submit " name=" " id="submit " value="Search Flights ">
                         </form>
+
+                        <script>
+                            function rmPlaceholder(element) {
+                                var plchldr = element.getAttribute("placeholder ");
+                                element.setAttribute('data-buffer', plchldr);
+                                var buffer = element.getAttribute("data-buffer ");
+                                element.placeholder = '';
+
+                            }
+
+                            function addPlaceholder(element) {
+                                var plchldr = element.getAttribute("data-buffer ");
+                                element.placeholder = plchldr;
+                            }
+
+                            // function rmPlaceholderDate(element) {
+                            //     var target = element.getAttribute("placeholder ");
+                            //     element.type = 'date';
+                            //     element.style.color = 'transparent';
+                            // }
+
+                            // function addPlaceholderDate(element) {
+                            //     var target = element.getAttribute("placeholder ");
+                            //     target.style.color = 'black';
+                            //     target.type = 'text';
+                            //     target.placeholder = phr;
+                            // }
+                        </script>
                     </div>
                     <!-- travel form ends-->
                 </div>
@@ -66,19 +113,19 @@
 
 
         <!-- popular Destination Div -->
-        <div class="popularDestinationDiv">
+        <div class="popularDestinationDiv ">
             <h1>Popular Destination</h1>
             <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</p>
 
-            <div class="destinationDetail">
-                <div class="destinationImage">
-                    <img src="../TraImages/dest-1.webp" alt="">
+            <div class="destinationDetail ">
+                <div class="destinationImage ">
+                    <img src="../TraImages/dest-1.webp " alt=" ">
                 </div>
-                <div class="destinationImage">
-                    <img src="../TraImages/dest-2.webp" alt="">
+                <div class="destinationImage ">
+                    <img src="../TraImages/dest-2.webp " alt=" ">
                 </div>
-                <div class="destinationImage">
-                    <img src="../TraImages/dest-3.webp" alt="">
+                <div class="destinationImage ">
+                    <img src="../TraImages/dest-3.webp " alt=" ">
                 </div>
 
             </div>
@@ -88,12 +135,12 @@
 
 
         <!-- package Div -->
-        <div class="packageDiv">
+        <div class="packageDiv ">
             <h1>We Provide Affordable Prices </h1>
             <p>Well educated, intellectual people, especially scientists at all times demonstrate considerably.</p>
 
-            <div class="packageDetail">
-                <div class="packageCard">
+            <div class="packageDetail ">
+                <div class="packageCard ">
                     <h4>Cheap Packages</h4>
                     <ul>
                         <li>
@@ -191,35 +238,35 @@
 
 
         <!-- feature Div -->
-        <div class="featuresDiv">
+        <div class="featuresDiv ">
             <h1>Other issues we can help you with</h1>
             <p>We all live in an age that belongs to the young at heart. Life that is.</p>
 
-            <div class="featureDetaislDiv">
-                <div class="singleFeatureDiv">
-                    <div class="feature_Image">
-                        <img src="../TraImages/feature1.webp" alt="">
+            <div class="featureDetaislDiv ">
+                <div class="singleFeatureDiv ">
+                    <div class="feature_Image ">
+                        <img src="../TraImages/feature1.webp " alt=" ">
                     </div>
                     <h4>Rent a Car</h4>
                     <p>The preservation of human life is the ultimate value, a pillar of ethics and the foundation.</p>
                 </div>
-                <div class="singleFeatureDiv">
-                    <div class="feature_Image">
-                        <img src="../TraImages/feature2.webp" alt="">
+                <div class="singleFeatureDiv ">
+                    <div class="feature_Image ">
+                        <img src="../TraImages/feature2.webp " alt=" ">
                     </div>
                     <h4>Cruise Booking</h4>
                     <p>I was always somebody who felt quite sorry for myself, what I had not got compared.</p>
                 </div>
-                <div class="singleFeatureDiv">
-                    <div class="feature_Image">
-                        <img src="../TraImages/feature3.webp" alt="">
+                <div class="singleFeatureDiv ">
+                    <div class="feature_Image ">
+                        <img src="../TraImages/feature3.webp " alt=" ">
                     </div>
                     <h4>To Do List</h4>
                     <p>The following article covers a topic that has recently moved to center stage–at least it seems.</p>
                 </div>
-                <div class="singleFeatureDiv">
-                    <div class="feature_Image">
-                        <img src="../TraImages/feature4.webp" alt="">
+                <div class="singleFeatureDiv ">
+                    <div class="feature_Image ">
+                        <img src="../TraImages/feature4.webp " alt=" ">
                     </div>
                     <h4>Food Features</h4>
                     <p>There are many kinds of narratives and organizing principles. Science is driven by evidence.</p>
