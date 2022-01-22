@@ -10,89 +10,50 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style_about.css" />
-    <link rel="stylesheet" href="blog.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="style_home1.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="blog.css" />
 
     <title>travel | hotel</title>
   </head>
 
   <body>
-    <header class="header">
-      <!-- <div style="color: azure" class="header__top">
-        <div>
-          <div>Visit Us</div>
-          <div>Buy Ticket</div>
-        </div>
-        <div>
-          <div><b>f</b></div>
-        </div>
-      </div> -->
-      <nav class="nav">
-        <img
-          src="./image/website-logo.webp"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-          designer="golu"
-          data-version-name="3.0"
-        />
-
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="./home.html">HOME</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">ABOUT</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">PAKAGES</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./hotel.html">HOTEL</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">INSURENCE</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./blog.html">BLOG</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">PAGES</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="./contact.html">CONTACT</a>
-          </li>
+    <!-- !header trial -->
+    <header header-sticky>
+      <nav>
+        <a href="index.html"
+          ><img src="image/website-logo.webp" alt="website-logo"
+        /></a>
+        <ul navbar-list class="navbar-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">PACKAGES</a></li>
+          <li><a href="">HOTELS</a></li>
+          <li><a href="">INSURENCE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="">PAGES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <ul hamburger class="hamburger">
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </nav>
-      <nav class="nav nav2bar hidden">
-        <img
-          src="./image/website-logo.webp"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-          designer="golu"
-          data-version-name="3.0"
-        />
+    </header>
 
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link nav__open" href="#">&#9776;</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header__title">
+    <section class="contact-view">
+      <div class="contact-view-bg"></div>
+      <div class="contact-view-text">
         <h1>Contact Us</h1>
-        <div class="header__title_link">
+        <div>
           <h4>Home</h4>
           <h4>&RightArrow;</h4>
           <h4>Contact Us</h4>
         </div>
       </div>
-    </header>
-
+    </section>
+    
     <section class="section-gap">
       <div class="google-map">
         <iframe
@@ -175,76 +136,14 @@
               </div>
             </div>
             <div>
-              <button class="submit-button">
-                SEND MESSE-tests SEND MESSE-tests
-                <button class="submit-button">SEND MESSE-tests</button> SEND
-                MESSE-tests
-                <button class="submit-button">
-                  SEND MESSE-tests this test 2 changes
-                </button>
+              <button class="submit-button">SEND MESSAGE</button>
               </button>
             </div>
           </form>
         </div>
       </div>
     </section>
-    <script src="js/custom.js"></script>
 
-    <!-- 
-    <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="contact.html">Contact Us</a>
-        </li>
-      </ul>
-      <img src="img/icon.png" alt="Logo" class="footer__logo" />
-      <p class="footer__copyright">
-        &copy; Copyright by
-        <a
-          class="footer__link twitter-link"
-          target="_blank"
-          href="https://twitter.com/jonasschmedtman"
-          >Jonas Schmedtmann</a
-        >. Use for learning or your portfolio. Don't use to teach. Don't claim
-        as your own product.
-      </p>
-    </footer>
-
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">
-        Open your bank account <br />
-        in just <span class="highlight">5 minutes</span>
-      </h2>
-      <form class="modal__form">
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email Address</label>
-        <input type="email" />
-        <button class="btn">Next step &rarr;</button>
-      </form>
-    </div>
-    <div class="overlay hidden"></div> -->
     <footer>
       <section>
         <div class="agency">
@@ -329,27 +228,9 @@
         </ul>
       </section>
     </footer>
-    <div class="nav2 nav__overlay hidden">
-      <div class="nav__links" style="display: grid">
-        <div class="nav__item">
-          <a class="nav__link" href="home.html">Home</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="About.html">About</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="./hotel.html">Hotel</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="blog.html">Blog</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="contact.html">Contact</a>
-        </div>
-      </div>
-    </div>
-    <div class="overlay hidden"></div>
 
     <script src="script_home.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="header.js"></script>
   </body>
 </html>
