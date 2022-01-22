@@ -18,6 +18,9 @@ header {
   height: 0;
   z-index: 10;
 }
+header nav a img[alt="website-logo"] {
+  width: 145px !important;
+}
 header > nav {
   width: 1140px;
   height: 70px;
