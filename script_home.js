@@ -211,3 +211,28 @@ dotContainer5.addEventListener("click", function (event) {
 });
 
 setInterval(nextSlide5, 4000);
+
+//------------------------------------------------------------------------------------
+const formBtn = document.querySelectorAll(".form__btn");
+const displayForm = document.querySelectorAll(".form__div");
+
+formBtn.forEach(function (event, index) {
+  event.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("btnwhite")) {
+      formBtn.forEach(function (m, i) {
+        if (m.classList.contains("btnwhite") && i !== index) {
+          m.classList.add("btn");
+          m.classList.remove("btnwhite");
+        }
+      });
+      e.target.classList.add("btnwhite");
+      e.target.classList.remove("btn");
+
+      displayForm.forEach(function (k, inde) {
+        if (!k.classList.contains("hidden")) k.classList.add("hidden");
+        if (inde == index) k.classList.remove("hidden");
+      });
+      console.log(displayForm);
+    }
+  });
+});
