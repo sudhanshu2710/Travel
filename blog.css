@@ -17,7 +17,7 @@ li {
 }
 button {
   border: none;
-  padding: 8px 11px;
+  /* padding: 8px 11px; */
   cursor: pointer;
 }
 
