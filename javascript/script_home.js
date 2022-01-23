@@ -305,3 +305,30 @@ dotContainer9.addEventListener("click", function (event) {
 });
 
 setInterval(nextSlide9, 4000);
+
+var input = document.querySelectorAll("input");
+var input2 = document.querySelectorAll(".date-input");
+input.forEach(function(e){
+  e.addEventListener("focus",function(ev){
+    this.setAttribute('data-buffer',this.placeholder);
+    this.placeholder='';
+  })
+});
+
+input.forEach(function(e){
+  e.addEventListener("blur",function(ev){
+    this.setAttribute('placeholder',this.getAttribute('data-buffer'));
+    this.removeAttribute('data-buffer');
+  })
+});
+
+input2.forEach(function(e){
+  e.addEventListener("focusin",function(ev){
+    e.type = 'date';
+  })
+});
+input2.forEach(function(e){
+  e.addEventListener("focusout",function(ev){
+    e.type = 'text';
+  })
+});
