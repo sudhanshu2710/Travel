@@ -5,60 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/png" href="image/icon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .card__container {
-        width: 300px;
-        overflow: hidden;
-      }
-      .card__container > div > img {
-        width: 100%;
-      }
-      .card__container > p {
-        width: 100%;
-        color: rgb(73, 75, 73);
-        font-size: 12px;
-      }
-      .card__container > .name {
-        font-weight: bolder;
-        margin-top: 10px;
-        font-size: 15px;
-      }
-      .card__container > div > .btn {
-        border: none;
-        margin-top: 10px;
-        background-color: rgb(252, 249, 249);
-        padding: 10px;
-        border: 1px solid rgb(230, 225, 225);
-        color: gray;
-      }
-      .card__container > div > .btn:hover {
-        background-color: rgb(238, 183, 63);
-      }
-      .card__container > .name:hover {
-        color: rgb(238, 183, 63);
-      }
-      .card__container > div > img:hover {
-        transform: scale(1.2);
-        transition: all 0.3s;
-      }
-      .img__cont {
-        overflow: hidden;
-      }
-    </style>
-    <link rel="stylesheet" href="css/style_home.css" />
+    <link rel="stylesheet" href="css/style_about.css" />
     <link rel="stylesheet" href="css/blog.css" />
 
     <link rel="stylesheet" href="css/style_home1.css" />
 
-    <title>travel | home</title>
+    <title>travel | hotel</title>
   </head>
 
   <body>
@@ -87,7 +44,7 @@
             <a class="nav__link" href="./index.html">HOME</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="About.html">ABOUT</a>
+            <a class="nav__link" href="#">ABOUT</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">PAKAGES</a>
@@ -126,172 +83,36 @@
         </ul>
       </nav>
 
-      <div class="header__container">
-        <div class="banner">
-          <div class="banner__name1">AWAY FROM MONOTONONUS LIFE</div>
-          <h1 class="banner__name2 highlight">MAGICAL TRAVEL</h1>
-          <p class="banner__desc">
-            if you are looking at blank cassettes on the web, you may be very
-            confused at <br />
-            the diffrence in price. You may see some for as low as $.17 each.
-          </p>
-          <button class="banner__button">GET STARTED</button>
-        </div>
-        <div class="form__container">
-          <div>
-            <button class="form__btn btnwhite">FLIGHTS</button
-            ><button class="form__btn btn">HOTELS</button
-            ><button class="form__btn btn">HOLIDAYS</button>
-          </div>
-          <div class="form__div flight">
-            <form class="form">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form__input form_fromWhere"
-                placeholder="From"
-              />
-              <input
-                type="text"
-                class="form__input form_todest"
-                placeholder="To"
-              />
-              <input
-                type="text"
-                class="form__input form_startTime"
-                placeholder="Start"
-              />
-              <input
-                type="text"
-                class="form__input form_returnTime"
-                placeholder="Return"
-              />
-              <input
-                type="number"
-                class="form__input form_Adults"
-                placeholder="Adults"
-              />
-              <input
-                type="number"
-                class="form__input form_child"
-                placeholder="Child"
-              />
-              <button type="submit">SEARCH FLIGHTS</button>
-            </form>
-          </div>
-          <div class="form__div hotels hidden">
-            <form class="form">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form__input form_fromWhere"
-                placeholder="From"
-              />
-              <input
-                type="text"
-                class="form__input form_todest"
-                placeholder="To"
-              />
-              <input
-                type="text"
-                class="form__input form_startTime"
-                placeholder="Start"
-              />
-              <input
-                type="text"
-                class="form__input form_returnTime"
-                placeholder="Return"
-              />
-              <input
-                type="number"
-                class="form__input form_Adults"
-                placeholder="Adults"
-              />
-              <input
-                type="number"
-                class="form__input form_child"
-                placeholder="Child"
-              />
-              <button type="submit">SEARCH HOTELS</button>
-            </form>
-          </div>
-          <div class="form__div holidys hidden">
-            <form class="form">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form__input form_fromWhere"
-                placeholder="From"
-              />
-              <input
-                type="text"
-                class="form__input form_todest"
-                placeholder="To"
-              />
-              <input
-                type="text"
-                class="form__input form_startTime"
-                placeholder="Start"
-              />
-              <input
-                type="text"
-                class="form__input form_returnTime"
-                placeholder="Return"
-              />
-              <input
-                type="number"
-                class="form__input form_Adults"
-                placeholder="Adults"
-              />
-              <input
-                type="number"
-                class="form__input form_child"
-                placeholder="Child"
-              />
-              <button type="submit">SEARCH HOLIDAYS</button>
-            </form>
-          </div>
+      <div class="header__title">
+        <h1>About Us</h1>
+        <div class="header__title_link">
+          <h4>Home</h4>
+          <h4>&RightArrow;</h4>
+          <h4>About Us</h4>
         </div>
       </div>
     </header>
 
-    <section class="section" id="section--1">
-      <div class="section__title">
-        <h2 class="section__head"><b>Popular Destinations</b></h2>
-        <p class="section__desc">
-          We all live in an age that belongs to the young at heart. Life that is
-          becoming extremely fast, day to day.
-        </p>
-      </div>
-    </section>
-    <section class="section" id="section--2">
-      <div class="section--2__container">
-        <div class="section--2__item section--2__item1" data-value="1">
-          <span><button class="btn-1 visible">$150</button></span>
-          <div class="section--2__item1--desc">
-            <div>Mountain River</div>
-            <div>Paraguay</div>
-          </div>
-        </div>
-        <div class="section--2__item section--2__item2" data-value="2">
-          <span><button class="btn-2 visible">$250</button></span>
-          <div class="section--2__item2--desc">
-            <div>Dream City</div>
-            <div>Paris</div>
-          </div>
-        </div>
-        <div class="section--2__item section--2__item3" data-value="3">
-          <span><button class="btn-3 visible">$550</button></span>
-          <div class="section--2__item3--desc">
-            <div>Cloud Mountain</div>
-            <div>Sri Lanka</div>
-          </div>
+    <section class="who-we-are">
+      <div>
+        <img
+          src="https://preview.colorlib.com/theme/travel/img/about/xinfo-img.jpg.pagespeed.ic.q_FhtoG5Ji.webp"
+          alt=""
+        />
+        <div>
+          <h6>ABOUT US</h6>
+          <h1>WHO WE ARE?</h1>
+          <p>
+            Here, I focus on a range of items and features that we use in life
+            without giving them a second thought. such as Coca Cola. Dolor sit
+            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco.
+          </p>
         </div>
       </div>
     </section>
+
     <section class="section" id="section--1">
       <div class="section__title">
         <h2 class="section__head"><b>We Provide Affordable Prices</b></h2>
@@ -585,141 +406,6 @@
         </div>
       </div>
     </section>
-    <section class="section" id="section--1">
-      <div class="section__title">
-        <h2 class="section__head"><b>Latest from Our Blog</b></h2>
-        <p class="section__desc">
-          With the exception of Nietzsche, no other madman has contributed so
-          much to human sanity as has.
-        </p>
-      </div>
-    </section>
-    <section class="section" id="section--9">
-      <div class="section--9__container">
-        <div class="slider9">
-          <div class="slide9 blogslider_container">
-            <div class="card__container">
-              <div class="img__cont">
-                <img
-                  class="card__item item__image"
-                  src="https://preview.colorlib.com/theme/travel/img/xb1.jpg.pagespeed.ic.L2GqHCSbSr.webp"
-                  alt=""
-                />
-              </div>
-              <div class="card__item item__button">
-                <button class="btn">Travel</button>
-                <button class="btn">Life Style</button>
-              </div>
-              <div class="name">Low Cost Advertising</div>
-              <p>
-                Acres of Diamonds… you’ve read the famous story, or at least had
-                it related to you. A farmer.
-              </p>
-              <p>31st January, 2022</p>
-            </div>
-            <div class="card__container">
-              <div class="img__cont">
-                <img
-                  class="card__item item__image"
-                  src="https://preview.colorlib.com/theme/travel/img/xb3.jpg.pagespeed.ic.1Wjbf8KBs4.webp"
-                  alt=""
-                />
-              </div>
-              <div class="card__item item__button">
-                <button class="btn">Travel</button>
-                <button class="btn">Life Style</button>
-              </div>
-              <div class="name">Low Cost Advertising</div>
-              <p>
-                Acres of Diamonds… you’ve read the famous story, or at least had
-                it related to you. A farmer.
-              </p>
-              <p>31st January, 2022</p>
-            </div>
-            <div class="card__container">
-              <div class="img__cont">
-                <img
-                  class="card__item item__image"
-                  src="https://preview.colorlib.com/theme/travel/img/xb2.jpg.pagespeed.ic.sAjhrJnksP.webp"
-                  alt=""
-                />
-              </div>
-              <div class="card__item item__button">
-                <button class="btn">Travel</button>
-                <button class="btn">Life Style</button>
-              </div>
-              <div class="name">Low Cost Advertising</div>
-              <p>
-                Acres of Diamonds… you’ve read the famous story, or at least had
-                it related to you. A farmer.
-              </p>
-              <p>31st January, 2022</p>
-            </div>
-          </div>
-          <div class="slide9 blogslider_container">
-            <div class="card__container">
-              <div class="img__cont">
-                <img
-                  class="card__item item__image"
-                  src="https://preview.colorlib.com/theme/travel/img/xb1.jpg.pagespeed.ic.L2GqHCSbSr.webp"
-                  alt=""
-                />
-              </div>
-              <div class="card__item item__button">
-                <button class="btn">Travel</button>
-                <button class="btn">Life Style</button>
-              </div>
-              <div class="name">Low Cost Advertising</div>
-              <p>
-                Acres of Diamonds… you’ve read the famous story, or at least had
-                it related to you. A farmer.
-              </p>
-              <p>31st January, 2022</p>
-            </div>
-            <div class="card__container">
-              <div class="img__cont">
-                <img
-                  class="card__item item__image"
-                  src="https://preview.colorlib.com/theme/travel/img/xb3.jpg.pagespeed.ic.1Wjbf8KBs4.webp"
-                  alt=""
-                />
-              </div>
-              <div class="card__item item__button">
-                <button class="btn">Travel</button>
-                <button class="btn">Life Style</button>
-              </div>
-              <div class="name">Low Cost Advertising</div>
-              <p>
-                Acres of Diamonds… you’ve read the famous story, or at least had
-                it related to you. A farmer.
-              </p>
-              <p>31st January, 2022</p>
-            </div>
-            <div class="card__container">
-              <div class="img__cont">
-                <img
-                  class="card__item item__image"
-                  src="https://preview.colorlib.com/theme/travel/img/xb2.jpg.pagespeed.ic.sAjhrJnksP.webp"
-                  alt=""
-                />
-              </div>
-              <div class="card__item item__button">
-                <button class="btn">Travel</button>
-                <button class="btn">Life Style</button>
-              </div>
-              <div class="name">Low Cost Advertising</div>
-              <p>
-                Acres of Diamonds… you’ve read the famous story, or at least had
-                it related to you. A farmer.
-              </p>
-              <p>31st January, 2022</p>
-            </div>
-          </div>
-
-          <div class="dots9"></div>
-        </div>
-      </div>
-    </section>
 
     <section class="section" id="section--3">
       <div class="section__3_text">
@@ -734,7 +420,7 @@
           That’s why it’s crucial that, as women, our behavior on the job is
           beyond reproach. inappropriate behavior is often laughed.
         </p>
-        <button style="margin-top: 70px">REQUEST CUSTOM PRICE</button>
+        <button>REQUEST CUSTOM PRICE</button>
       </div>
       <div class="section__3_img">
         <img
@@ -743,7 +429,7 @@
         />
       </div>
     </section>
-
+   
     <footer>
       <section>
         <div class="agency">
@@ -831,28 +517,19 @@
     <div class="nav2 nav__overlay hidden">
       <div class="nav__links" style="display: grid">
         <div class="nav__item">
-          <a class="nav__link" href="home.html">HOME</a>
+          <a class="nav__link" href="home.html">Home</a>
         </div>
         <div class="nav__item">
-          <a class="nav__link" href="About.html">ABOUT</a>
+          <a class="nav__link" href="About.html">About</a>
         </div>
         <div class="nav__item">
-          <a class="nav__link" href="./hotel.html">PACKAGES</a>
+          <a class="nav__link" href="./hotel.html">Hotel</a>
         </div>
         <div class="nav__item">
-          <a class="nav__link" href="./hotel.html">HOTELS</a>
+          <a class="nav__link" href="blog.html">Blog</a>
         </div>
         <div class="nav__item">
-          <a class="nav__link" href="./blog.html">INSURANCE</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="./blog.html">BLOG</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="contact.html">PAGES</a>
-        </div>
-        <div class="nav__item">
-          <a class="nav__link" href="contact.html">CONTACT</a>
+          <a class="nav__link" href="contact.html">Contact</a>
         </div>
       </div>
     </div>

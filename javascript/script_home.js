@@ -211,3 +211,97 @@ dotContainer5.addEventListener("click", function (event) {
 });
 
 setInterval(nextSlide5, 4000);
+
+//------------------------------------------------------------------------------------
+const formBtn = document.querySelectorAll(".form__btn");
+const displayForm = document.querySelectorAll(".form__div");
+
+formBtn.forEach(function (event, index) {
+  event.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("btnwhite")) {
+      formBtn.forEach(function (m, i) {
+        if (m.classList.contains("btnwhite") && i !== index) {
+          m.classList.add("btn");
+          m.classList.remove("btnwhite");
+        }
+      });
+      e.target.classList.add("btnwhite");
+      e.target.classList.remove("btn");
+
+      displayForm.forEach(function (k, inde) {
+        if (!k.classList.contains("hidden")) k.classList.add("hidden");
+        if (inde == index) k.classList.remove("hidden");
+      });
+      console.log(displayForm);
+    }
+  });
+});
+//--------------------------------------------------------------------------------------
+
+const slides9 = document.querySelectorAll(".slide9");
+const dotContainer9 = document.querySelector(".dots9");
+// const slider = document.querySelector(".slider");
+// slider.style.transform = "scale(0.4) translateX(-800px)";
+// slider.style.overflow = "visible";
+
+slides9.forEach(
+  (img, index) => (img.style.transform = `translateX(${100 * index}%)`)
+);
+
+let curSlide9 = 0;
+const maxSlide9 = slides9.length;
+const createDots9 = function () {
+  slides9.forEach((_, i) => {
+    dotContainer9.insertAdjacentHTML(
+      "beforeend",
+      `<button class="dots9__dot" data-slide9="${i}"></button>`
+    );
+  });
+};
+
+const goToSilde9 = function (cur) {
+  slides9.forEach(
+    (img, index) =>
+      (img.style.transform = `translateX(${100 * (index - cur)}%)`)
+  );
+};
+const activateDots9 = function (slideNumber) {
+  document
+    .querySelectorAll(".dots9__dot")
+    .forEach((dot) => dot.classList.remove("dots9__dot--active"));
+  document
+    .querySelector(`.dots9__dot[data-slide9="${slideNumber}"]`)
+    .classList.add("dots9__dot--active");
+};
+createDots9();
+goToSilde9(0);
+activateDots9(0);
+const nextSlide9 = function () {
+  if (curSlide9 == maxSlide9 - 1) curSlide9 = 0;
+  else curSlide9++;
+  //console.log(curSlide);
+  goToSilde9(curSlide5);
+  activateDots9(curSlide9);
+};
+const prevSilde9 = function () {
+  if (curSlide9 == 0) curSlide9 = maxSlide9 - 1;
+  else curSlide9--;
+  goToSilde9(curSlide9);
+  activateDots9(curSlide9);
+};
+
+// document.addEventListener("keydown", function (e) {
+//   if (e.key === "ArrowLeft") prevSilde5();
+//   e.key === "ArrowRight" && nextSlide5(); //short cuircuiting both are corret
+// });
+
+dotContainer9.addEventListener("click", function (event) {
+  if (event.target.classList.contains("dots9__dot")) {
+    curSlide9 = event.target.dataset.slide5;
+    // console.log(typeof curSlide5);
+    goToSilde9(curSlide9);
+    activateDots9(curSlide9);
+  }
+});
+
+setInterval(nextSlide9, 4000);

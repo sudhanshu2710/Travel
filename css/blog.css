@@ -17,7 +17,7 @@ li {
 }
 button {
   border: none;
-  padding: 8px 11px;
+  /* padding: 8px 11px; */
   cursor: pointer;
 }
 
@@ -27,8 +27,8 @@ button {
   background: url(https://preview.colorlib.com/theme/travel/img/blog/xblog-home-banner.jpg.pagespeed.ic.AoKs9lLPRC.webp);
   background-size: cover;
   margin-left: -210px;
-  z-index: -3;
   overflow: hidden;
+  position: relative;
 }
 .viewport .viewport-bg {
   padding: 55vh 0;
@@ -36,8 +36,8 @@ button {
 }
 .viewport .viewport-text {
   width: 80%;
-  position: relative;
-  top: -70vh;
+  position: absolute;
+  top: 40vh;
   left: 20vw;
   padding: 20px;
   text-align: center;
@@ -69,17 +69,16 @@ button {
 
 /* section->category below viewport */
 section[text="category"] {
-  position: relative;
   padding: 90px 0px;
 }
 .category {
   width: 90%;
-  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 330px);
   justify-content: space-around;
   margin: auto;
   text-align: center;
+  position: relative;
 }
 .category img {
   width: 100%;
@@ -443,39 +442,6 @@ footer p {
 }
 
 /* media queries - 750tablet, 500mobile */
-/* @media screen and (max-width: 1100px) {
-    .viewport {
-      margin-left: -28%;
-    }
-    .viewport .viewport-text {
-      left: 25vw;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .viewport {
-      margin-left: -35%;
-    }
-    .viewport .viewport-text {
-      left: 28vw;
-    }
-  }
-  @media screen and (max-width: 900px) {
-    .viewport {
-      margin-left: -38%;
-    }
-    .viewport .viewport-text {
-      left: 35vw;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .viewport {
-      margin-left: -50%;
-    }
-    .viewport .viewport-text {
-      left: 35vw;
-    }
-  } */
-
 @media screen and (max-width: 1200px) {
   .blog-content {
     grid-template-columns: 690px 290px;
