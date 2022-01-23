@@ -1,2 +1,0 @@
-# Travel
-learning project
