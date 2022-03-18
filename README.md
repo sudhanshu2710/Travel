@@ -1,4 +1,5 @@
 <h1>Team-2</h1>
+An online travel package booking website.
 <hr>
 
 <h3>Team members:</h3>
