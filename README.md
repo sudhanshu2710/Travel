@@ -1,4 +1,4 @@
-<h1>Team-2</h1>
+<h1>Travelista</h1>
 An online travel package booking website.
 <hr>
 
